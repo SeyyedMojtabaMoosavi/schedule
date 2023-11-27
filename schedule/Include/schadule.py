@@ -4,13 +4,14 @@ import  functools
 logger=logging.getLogger('schedule')
 
 
+
+
 class ScheduleError(Exception):      #تمامی اکسپشن های ما در پروژه از این ارث بری میکنند
    """ base schedule Exeption"""
 class ScheduleValueError(ScheduleError):
     """base schedule value Error"""
 class IntervalError(ScheduleError):
    """use improper intervalv Error"""
-
 
 class Scheduler: #  اجرا کننده هر جاب میباشد
     def __init__(self):
